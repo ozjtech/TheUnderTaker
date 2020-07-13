@@ -1,4 +1,3 @@
-
 #import dependencies [X]
 #intergrate google sheets and drive APIS[X]
 #build menu[X]
@@ -20,12 +19,18 @@ creds = ServiceAccountCredentials.from_json_keyfile_name("mysteryBox.json", scop
 client = gspread.authorize(creds)
 
 #the user will be able to create new sheets for new lists
+
+#testing here
+
+
+
 # #because of this we are naming sheet1 primary sheet, so that its special
-primarySheet = client.openall('underTakerDB')#.sheet1 
+
+primarySheet = client.open('underTakerDB').sheet1 
+
 
 #building the menu
 menu = ConsoleMenu("TheUnderTaker", "task organizer")
-
 
 #FUNCTIONALITY FOR THE MENU ITEMS GOES UNDER THIS LINE
 
@@ -36,17 +41,49 @@ def newList():
     newSheetConfirmation = "Your new tasklist %s is ready."
     print(newSheetConfirmation % newSheetName)
 
+
+
+#add a task
+def newTask():
+    class task:
+        def __init__(self):
+            self.value = input("What would you like to accomplish? ")
+            self.priority = input("What is the priority of this task? least, low or high? ")
+        createTask = task()
+#recursive task generator???
+index = 2
+#topPriority = str
+#lowPriority = str
+#leastPriority = str
+
+
+#uses task.value to sort a given task and assign it to a place in the spreadsheet
+def addTask(task):
+    if (task.priority == 'high'):
+        primarySheet.insert_row(task.value, index)
+    if (task.priority == 'low'):
+        primarySheet.insert_row(task.value, index)
+    if (task.priority == 'least'):
+        primarySheet.insert_row(task.value, index)
+        #,lowPriority,leastPriority]
+    #primarySheet.insert_row(row(), index)
+
+#shows all sheets inside of the spreadsheet
 def showAllLists():
-    everyList = primarySheet.sheet
-    print(everyList)
+    fetch = client.open('undertakerDB')
+    for sheet in fetch:
+        print(sheet)
+
+#showAllLists() doesn't work yet
+
+def startMenu():
 #NEW MENU ITEMS GO UNDER THIS LINE AFTER THEIR FUNCTIONALITY
 
-showAllLists()
-def startMenu():
 #create a submenu to show all sheets and let the user pick which one to print
     viewTasksOption = FunctionItem("View all task lists", showAllLists)
 #create logic for adding tasks
-    addTaskOption = MenuItem("Add a task")
+#this DOESN"T WORK!?!?!?!
+    addTaskOption = FunctionItem("Add a task", addTask(newTask))
 #create logic for updating tasks
     updateATaskOption = MenuItem("Update a task")
 #create logic for new tasks
@@ -61,6 +98,5 @@ def startMenu():
     menu.append_item(deleteATaskOption)
 #calling show to show the menu and allow the user to interact
     menu.show()
-#commenting this out to test
-#startMenu()
 
+startMenu()
