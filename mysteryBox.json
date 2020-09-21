@@ -1,0 +1,12 @@
+{
+  "type": "service_account",
+  "project_id": "theundertaker",
+  "private_key_id": "282483b86d2d49dfda6f9879d5b5fcf631d2d630",
+  "private_key": "-----BEGIN PRIVATE KEY-----\nMIIEvQIBADANBgkqhkiG9w0BAQEFAASCBKcwggSjAgEAAoIBAQCwJPaXGajJXcx3\nEOhqDo5xPMHuTKq5qfbRPvaqz+tFN389V6Av2g/dXU5rrMJuX4CeIgF7iq+P+H70\n8ZIDEL4mJS3i4KUCxGZ7aP8gQ3tgy+IiPBYyjw+nhaw42HxdJ0Q/w79IFDMldOLg\nPvxlbdljbQ25FUKVrdN+WkKxp9MWng7oEgsT5uUAnoabm/wFd+QS65doIkjM0YMV\noWZtYQk61QuYSpz3hrlBs35fi4u/CFKI/p+lsf5W7e5cYYhCHcMIE7rbN8nPumbT\n44Ej2tdGFQ5Lqxdb7Bp0kqGHiwxPpFaYlXWPDw/Rx1zk6Uhn1hx6Tsu1+lHDpMwb\nTW+bv2MpAgMBAAECggEAOF7j8bBbBXJ4xGQLVSGqcU/V6nrrqjZcEFP7oeefbgvY\nMxvvXlEFgbziI3Bq2uLCaRkN62kTTVpj2uTSaxu5FsEQQcrN1Chheb4846jk+7HU\nAUvEeNKy2lRbrOePSUqPO27cMOeSBLs2/jf6E0XH69tTKHfG0tsJ06Z0MKG6WsKa\nwfPHgo5Pe43VQp3LC0Y4CHBL1xspv32B2lAB+a/GckDkAsijM/r6cth5Gk6kF14E\n5u4D46CGZkNIdU3K5nlNUBYLoNu6Gq7kpx36gLMxe85xnOMFvnlpOdqNEMkZApR7\niBuwfRhWkrW3hMzG486vrco/yqWDhX8QRfAu58LbNwKBgQDufxWomk3+EKJuDGp+\nb9PkNb/JVM5RqkUTtQxNBhsAXeydLIrAW4AVNtS7J3uleBxR6l09Iq682uH4HqfT\nj9/xOAuSTy4on1z2Lh/5Li4xy43SBvGS3lbuieQ7zrBDdpi6lpBq6IAwY+Oq/n8W\nnndyJnfJTRx44IxX8x/C5ukmmwKBgQC9EmWcrLSaVcJ2SGYI8C/NRlbL+i8QC5eh\nOODerCX2SQRz6uJTQVoz/qDtn/lQU+U4ASOTLlRSIT62EuE1Kn3H7u7KvWsTY2K3\nCFfM8GMJXx1f9FQ5t6Z4j3BcqUWWp7QDNq3j9Fq4mg2IrKvai0cNoPOO1uxboudd\nUEmXZUaXiwKBgQCgQ0fDl4UHUBhGSROayPyjIrcwzEskN33Zo1STwaGNWpAwggju\n/82O89x5syt0YsTtCscC2PaAs7kbKUZvdQPwLVAhThHffE9UomQb5rtl/LndQ4s7\nvSq/emujAN4TR3OUFq8PGBNj8QvBEOlHws7TJyRhYe7bD1FfnGFgcBiGNwKBgAe2\nJWDThnY5Azpxz3+T1E9KDCY7qQm9f0y7Fije2pmF9uGHdf2xT62JOCUY/kExesri\n+QF6xUOoSXeBo5/YgNLTwveP7DsZNaCDfZlFQLTUJU2RmJHWFLscFpgg606uvl/X\nLhZ7E+wtlFm7uTKrtZUvuF9eErvWFBuxN58uKUfrAoGAdmQCHtEki6h4D5WViDVn\nAa+6BwbujHjPJli9RHkwgb3I9UEsAVJodDXWw5j9YXKENU2grjjxggZH+rENE6gD\n/pkMcRAXk3m+fzhGHC0zVQFWMA+T0/2XO/85Lz2oWf0iGpr/93VD5get+HAI2kMQ\neGrp9rbFlWLcZIPFCacDzdQ=\n-----END PRIVATE KEY-----\n",
+  "client_email": "taskmanager@theundertaker.iam.gserviceaccount.com",
+  "client_id": "106976627771753737585",
+  "auth_uri": "https://accounts.google.com/o/oauth2/auth",
+  "token_uri": "https://oauth2.googleapis.com/token",
+  "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
+  "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/taskmanager%40theundertaker.iam.gserviceaccount.com"
+}
