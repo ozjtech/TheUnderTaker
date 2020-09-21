@@ -14,10 +14,6 @@ from consolemenu.items import *
 import gspread
 from oauth2client.service_account import ServiceAccountCredentials
 
-scope = ["https://spreadsheets.google.com/feeds",'https://www.googleapis.com/auth/spreadsheets',"https://www.googleapis.com/auth/drive.file","https://www.googleapis.com/auth/drive"]
-creds = ServiceAccountCredentials.from_json_keyfile_name("mysteryBox.json", scope)
-client = gspread.authorize(creds)
-
 #the user will be able to create new sheets for new lists
 
 #testing here
